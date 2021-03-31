@@ -15,6 +15,7 @@ struct MapView: UIViewRepresentable {
         map.showsUserLocation = true
         map.delegate = context.coordinator
         map.mapType = .satelliteFlyover
+        map.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599), span: MKCoordinateSpan(latitudeDelta: 70.0, longitudeDelta: 70.0))
         return map
     }
     
